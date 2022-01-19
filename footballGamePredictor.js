@@ -32,7 +32,7 @@ const randomlySelect = array => {
 	const position = Math.floor(Math.random() * array.length);
 	return array[position];
 };
-
+//Randomly generates info for the football game then outputs using a function
 const footballGame = () => {
 	const firstTeam = randomlySelect(footballTeams);
 	let secondTeam = randomlySelect(footballTeams);
@@ -64,5 +64,5 @@ const footballGame = () => {
 			secondTeamScore
 	);
 };
-
+// Calls function
 footballGame();
